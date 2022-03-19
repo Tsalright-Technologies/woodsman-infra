@@ -5,7 +5,7 @@ terraform {
       version = "~> 2.99"
     }
   }
-  
+
   backend "azurerm" {}
 }
 
@@ -16,7 +16,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = "woodsman-cafe-rg"
-  location = "North Central US"
+  location = "West US 2"
 }
 
 resource "azurerm_static_site" "site" {
